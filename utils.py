@@ -76,9 +76,15 @@ def get_device(args):
     # set gpu ids
     str_ids = args.gpu_ids.split(',')
     args.gpu_ids = []
-    for str_id in str_ids:
-        id = int(str_id)
-        if id >= 0:
-            args.gpu_ids.append(id)
-    if len(args.gpu_ids) > 0:
-        torch.cuda.set_device(args.gpu_ids[0])
+
+    if torch.cuda.is_available():
+        for str_id in str_ids:
+            id = int(str_id)
+            if id >= 0:
+                args.gpu_ids.append(id)
+
+        if len(args.gpu_ids) > 0:
+            torch.cuda.set_device(args.gpu_ids[0])
+    else:
+        print("CUDA not available. Running on CPU.")
+        args.gpu_ids = []

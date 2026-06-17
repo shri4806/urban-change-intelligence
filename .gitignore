@@ -2,3 +2,15 @@
 *.DS_Store
 ./sha256
 ./sha256.pub
+
+cf_env/
+venv/
+
+checkpoints/
+
+__pycache__/
+
+samples_LEVIR/predict_CD_ChangeFormerV6/
+
+*.pt
+*.pth
