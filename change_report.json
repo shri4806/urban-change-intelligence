@@ -1,0 +1,26 @@
+{
+    "changed_pixels": 16552,
+    "total_pixels": 65536,
+    "change_percentage": 25.26,
+    "regions_detected": 17,
+    "largest_region": 1638,
+    "smallest_region": 80,
+    "average_region": 973.65,
+    "top_regions": [
+        {
+            "id": 6,
+            "size": 1638,
+            "location": "upper-left"
+        },
+        {
+            "id": 9,
+            "size": 1294,
+            "location": "middle-center"
+        },
+        {
+            "id": 11,
+            "size": 1271,
+            "location": "middle-left"
+        }
+    ]
+}

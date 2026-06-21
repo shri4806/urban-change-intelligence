@@ -14,3 +14,5 @@ samples_LEVIR/predict_CD_ChangeFormerV6/
 
 *.pt
 *.pth
+.env
+rag/.env
